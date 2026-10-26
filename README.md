@@ -48,6 +48,14 @@ The Standard Queue latency is the thing. Five minutes is fine for bulk SEO resea
 
 **Best for:** SEO agencies and platforms doing bulk keyword research where cost matters more than latency.
 
+### Firecrawl: Search Plus Page Content, Built for AI Agents
+
+[Firecrawl](https://www.firecrawl.dev/?utm_source=imntz950-serp-api-comparison&utm_medium=integration) is a web search API aimed at AI agents. One call to its [`/search` endpoint](https://docs.firecrawl.dev/features/search?utm_source=imntz950-serp-api-comparison&utm_medium=integration) returns web results with a title, description and URL, and the `sources` parameter adds news and image results. Add `scrapeOptions` with the markdown format and results also come back with their page content as markdown where the page can be scraped, so an agent or RAG pipeline doesn't need a separate scraping step.
+
+[Pricing](https://www.firecrawl.dev/pricing?utm_source=imntz950-serp-api-comparison&utm_medium=integration) is subscription-based, with pay-as-you-go top-ups on paid plans: a free plan with 1,000 credits a month (about 500 searches), then $19/month for 2,500 searches (roughly $7.60 per thousand) and about $2 per thousand from the $99/month plan, which includes 50,000 searches. Search costs 2 credits per 10 results, and scraping the results costs extra. The limit is scope: web, news and image results only, with no structured SERP features like knowledge graphs or shopping carousels, and it isn't a multi-engine SERP product.
+
+**Best for:** AI agents and RAG pipelines that need search results and readable page content from a single call.
+
 ### ScraperAPI — The One That Goes Beyond SERP
 
 Here's where the comparison gets more interesting. ScraperAPI isn't a dedicated SERP API — it's a full-stack web scraping platform that includes SERP as one of many things it does. And that distinction matters a lot depending on what you're actually trying to build.
@@ -145,6 +153,7 @@ Honestly? If your entire use case is structured Google SERP data, you need 80+ e
 |---|---|
 | Need Google SERP only, pure speed + cost focus | Serper |
 | Bulk SEO research, latency doesn't matter | DataForSEO |
+| Need search results plus page content as markdown for an AI agent | [Firecrawl](https://www.firecrawl.dev/?utm_source=imntz950-serp-api-comparison&utm_medium=integration) |
 | Need SERP + full web scraping + ecommerce data | **ScraperAPI** |
 | Need 80+ engines including niche search results | SerpAPI |
 | Enterprise-level data pipelines at massive scale | ScraperAPI Enterprise |
